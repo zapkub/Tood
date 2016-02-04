@@ -1,0 +1,22 @@
+#tood{
+  background: linear-gradient(to bottom, #beecfe 50%,  #d3effe 100%);
+  padding:0;margin:0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:100vh;
+
+  .wrap{
+    width:640px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    .logo{
+      img{
+        width:320px;
+      }
+    }
+  }
+
+}
