@@ -1,5 +1,54 @@
-<div class="container">
+<div id="soohuk" class="container anim-slide-below-fade">
+      <div class="wrap " >
+        <div class="decor left">
+        </div>
+        <div class="gas-dispensor">
+          <div class="gas-title">
+            <img id="title" src="assets/images/soohuk/title.png">
+          </div>
+          <div class="result-container">
+            <div class="result-wrap">
+              <div class="result">
+                <div class="day" date-meter value="main.value.random.format('D')" dot="true" stop="main.isStop">
+                  {{value}}
+                </div>
+                <div class="month" date-meter value="main.value.random.format('M')" dot="true" stop="main.isStop">
+                  {{value}}
+                </div>
+                <div class="year" date-meter value="main.value.random.format('YYYY')" stop="main.isStop">
+                  {{value}}
+                </div>
+              </div>
+            </div>
+            <div class="control-container">
+              <a ng-click="main.rolling()">
+                <img src="assets/images/soohuk/icon-pump.png">
+              </a>
+              <div class="tooltip">
+                Start เติมรักเริ่มตามหา
+              </div>
+              <a ng-click="main.stopRolling()">
+                <img src="assets/images/soohuk/icon-stop.png">
+              </a>
+              <div class="tooltip">
+                Stop หยุด
+              </div>
+            </div>
+            <div class="mobile-guide">
+                Start เติมรักเริ่มตามหา , Stop หยุด
+            </div>
+            <a href="#" class="share-fb-btn" ng-click="main.share()"><img src="assets/images/soohuk/icon-share.png"></a>
+          </div>
+          <div class="decor-bottom">
 
-    
+          </div>
+        </div>
+        <div class="decor right">
+        </div>
+      </div>
 
+</div>
+
+<div ng-show="main.isLoaded" class="loading">
+  โหลดอยู่
 </div>

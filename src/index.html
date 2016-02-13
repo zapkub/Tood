@@ -1,10 +1,11 @@
 <!doctype html>
-<html ng-app="toodrandom" ng-strict-di>
+<html ng-app="tood" ng-strict-di>
   <head>
     <meta charset="utf-8">
     <title>toodrandom</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta content="" name="description">
+    <meta content="width=device-width" name="viewport">
+
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
@@ -12,7 +13,8 @@
     <!-- run `gulp inject` to automatically populate bower styles dependencies -->
     <!-- endbower -->
     <!-- endbuild -->
-
+    <link href="assets/font/ds-digit/ds-digit.css" rel="stylesheet">
+    <link href="assets/font/thaisans/css/fontface.css" rel="stylesheet">
     <!-- build:css({.tmp/serve,src}) styles/app.css -->
     <!-- inject:css -->
     <!-- css files will be automatically insert here -->
@@ -20,11 +22,9 @@
     <!-- endbuild -->
   </head>
   <body>
-    <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-    <div ui-view></div>
+    <!--[if lt IE 10]> <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p> <![endif]-->
+    <div id="fb-root"></div>
+    <div class="anim-in-out" data-anim-sync="true" ui-view></div>
 
     <!-- build:js(src) scripts/vendor.js -->
     <!-- bower:js -->
@@ -33,6 +33,7 @@
     <!-- endbuild -->
 
     <!-- build:js({.tmp/serve,.tmp/partials}) scripts/app.js -->
+    <script src="./app/lib/three.js"></script>
     <!-- inject:js -->
     <!-- js files will be automatically insert here -->
     <!-- endinject -->
